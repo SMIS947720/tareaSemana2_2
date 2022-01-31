@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>peliculas</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body>
+    <p><em>
+    <ul id="v-for-object" class="demo">
+        <h2>PELICULAS</h2>
+        <div v-for="(value, key) in object">
+            <table class="table">
+                <thead>
+                  <tr class="table-success">
+                    <th scope="col"></th>
+                    <th scope="col">N°</th>
+                    <th scope="col">Pelicula</th>
+                   
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"></th>
+                    <td>{{ key }}</td>
+                    <td>{{ value }}</td>
+                    
+                  </tr>
+                </tbody>
+            </table>
+            
+        
+          </div>
+      </ul>
+    </em></p>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    
+    <script>
+
+     new Vue({
+     el: '#v-for-object',
+     data: {
+        object: {
+      Pelicula1: 'Titanic'+' ' + 1997,
+      Pelicula2: 'Son como niños'+' '+ 2010,
+      pelicula3: 'Rápido y Furioso'+' '+ 2001,
+      pelicula4: 'Hotel Transylvania'+' '+2012,
+         }
+      }
+    })
+
+
+    </script>
+
+
+
+
+   
+</body>
+</html>
